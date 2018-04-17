@@ -1,0 +1,176 @@
+body {
+    font-size: 14px;
+}
+
+p {
+    padding: 5px 0;
+}
+
+h1, h2, h3 {
+    padding: 20px 0;
+    border-bottom: dashed 2px #ccc;
+}
+
+.panel-body {
+    position: relative;
+}
+
+p.text-em-2 {
+    font-size: 2em;
+}
+
+p.text-px-18 {
+    font-size: 18px;
+}
+
+p.text-pt-18 {
+    font-size: 18pt;
+}
+
+p.text-p-18 {
+    font-size: 118%;
+}
+
+p.font-bold {
+    font-weight: bold;
+}
+
+p.font-italic {
+    font-style: italic;
+}
+
+p.font-small-caps {
+    font-variant: small-caps;
+}
+
+p.font-size-30 {
+    font-size: 30px;
+}
+
+.panel-body {
+    min-height: 200px;
+}
+
+.bg-red {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.bg-image {
+    background: url("/static/img/bg-pattern.jpg");
+}
+
+.bg-repeat-y {
+    background-repeat: repeat-y;
+}
+
+.bg-attachment {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    overflow: scroll;
+    height: 500px;
+}
+
+.box {
+    background: #333;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.box.float-left {
+    float: left;
+}
+
+.box.pseudoclass {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.box.pseudoclass:hover {
+    background: yellow;
+}
+
+.boxes .box:nth-child(2) {
+    background: orange !important;
+}
+
+.boxes .box:empty {
+    background: black !important;
+}
+
+.boxes .box:last-child {
+    background: gray !important;
+}
+
+.box.clearfix {
+    clear: both;
+}
+
+.box-pos-absolute {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+.box-pos-relative {
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+.box-pos-static {
+    position: relative;
+    top: 10px;
+    left: 200px;
+    padding: 20px;
+}
+
+.border-dotted {
+    border: dotted 1px;
+    border-color: red;
+    border-radius: 30px;
+}
+
+.border-dashed {
+    border: dashed 2px;
+    border-color: green;
+    border-radius: 10px;
+}
+
+.border-solid {
+    border: solid 3px;
+    border-color: blue;
+    border-radius: 0;
+}
+
+.links a:active {
+    background: yellow;
+}
+
+.links a:focus {
+    color: red;
+}
+
+.links a:visited {
+    color: green;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

@@ -1,0 +1,191 @@
+body {
+    font-size: 14px;
+}
+
+p {
+    padding: 5px 0;
+}
+
+h1, h2, h3 {
+    padding: 20px 0;
+    border-bottom: dashed 2px #ccc;
+}
+
+.panel-body {
+    position: relative;
+    min-height: 200px;
+}
+
+p.text-shadow {
+    text-shadow: 2px 2px #f00;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: #333;
+    color: #fff;
+    margin-right: 50px;
+    float: left;
+    padding: 30px;
+}
+
+.box.border-30px {
+    border-radius: 30px;
+}
+
+.box.border-30p {
+    border-radius: 30%;
+}
+
+.box.shadow-h {
+    -webkit-box-shadow: 20px 20px black;
+    -moz-box-shadow: 20px 20px black;
+    box-shadow: 20px 20px black;
+}
+
+.box.shadow-blur {
+    -webkit-box-shadow: 20px 20px 10px black;
+    -moz-box-shadow: 20px 20px 10px black;
+    box-shadow: 20px 20px 10px black;
+}
+
+.box.shadow-inset {
+    -webkit-box-shadow: 20px 20px 10px black;
+    -moz-box-shadow: 20px 20px 10px black inset;
+    box-shadow: 20px 20px 10px black inset;
+}
+
+.gradient-linear {
+    background: red;
+    background: -webkit-linear-gradient(red, yellow);
+    background: -o-linear-gradient(red, yellow);
+    background: -moz-linear-gradient(red, yellow);
+    background: linear-gradient(red, yellow);
+}
+
+.gradient-radial {
+    background: red;
+    background: -webkit-radial-gradient(red, yellow, green);
+    background: -o-radial-gradient(red, yellow, green);
+    background: -moz-radial-gradient(red, yellow, green);
+    background: radial-gradient(red, yellow, green);
+}
+
+.origin {
+    border: solid 10px;
+    background: url(/static/img/img_flwr.gif);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: top left;
+}
+
+.borderimg1 {
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(/static/img/border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(/static/img/border.png) round; /* Opera 11-12.1 */
+    border-image: url(/static/img/border.png) round;
+    border-image-slice: 50;
+}
+
+.borderimg2 {
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(/static/img/border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(/static/img/border.png) round; /* Opera 11-12.1 */
+    border-image: url(/static/img/border.png) round;
+    border-image-slice: 20%;
+}
+
+.borderimg3 {
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(/static/img/border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(/static/img/border.png) round; /* Opera 11-12.1 */
+    border-image: url(/static/img/border.png) round;
+    border-image-slice: 30%;
+}
+
+.animation {
+    background-color: red;
+    -webkit-animation-name: animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: animation;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes animation {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+@keyframes animation {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.transform {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 4s; /* Safari */
+    transition: width 2s, height 4s;
+}
+
+.transform:hover {
+    width: 200px;
+    height: 200px;
+}
+
+@font-face {
+    font-family: Test;
+    src: url(/static/Test.ttf);
+}
+
+.font-face {
+    font-family: Test;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 25%;
+    height: 100px;
+    margin: 10px;
+}
+
+.flex-item:hover {
+    background-color: cornflowerblue;
+    width: 55%;
+    height: 100px;
+    margin: 10px;
+}
+
+@media (min-width: 1024px) {
+    .columns {
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+        -moz-column-count: 3; /* Firefox */
+        column-count: 3;
+
+        -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 30px; /* Firefox */
+        column-gap: 30px;
+    }
+}
+@media (max-width: 1023px) {
+    .columns {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+
+        -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 20px; /* Firefox */
+        column-gap: 20px;
+    }
+}
